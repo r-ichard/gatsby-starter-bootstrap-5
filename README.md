@@ -8,7 +8,7 @@
 </h1>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2496959d-1507-4717-8fd6-846282c3a409/deploy-status)](https://app.netlify.com/sites/gatsby-bootstrap-5/deploys)
-![dependancies](https://img.shields.io/david/r-ichard/gatsby-starter-bootstrap-5.?style=flat-square)
+![dependancies](https://img.shields.io/david/r-ichard/gatsby-starter-bootstrap-5)
 
 Minimal bootstrap 5 and Gatsby configuration with SCSS support. 
 
