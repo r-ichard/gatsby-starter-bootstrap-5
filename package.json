@@ -2,7 +2,7 @@
   "name": "@r-ichard/gatsby-starter-bootstrap-5",
   "private": false,
   "description": "A simple starter to get up and developing quickly with Gatsby 4 and Bootstrap 5",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "author": "Richard Raduly <richard@raduly.fr>",
   "dependencies": {
     "@popperjs/core": "^2.9.2",
