@@ -2,6 +2,14 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
+const isActive = ({ isCurrent }) => {
+  return isCurrent ? { className: "nav-link active" } : {className: "nav-link"}
+}
+
+const ExactNavLink = props => (
+  <Link getProps={isActive} {...props} />
+)
+
 const Navbar = ({ siteTitle }) => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-primary">
@@ -15,22 +23,18 @@ const Navbar = ({ siteTitle }) => {
         <div className="collapse navbar-collapse" id="main-navbar">
           <ul className="navbar-nav me-auto mb-2 mb-md-0">
             <li className="nav-item">
-              <Link
+              <ExactNavLink
                 to="/"
-                className="nav-link"
-                activeClassName="active"
               >
                 Home
-              </Link>
+              </ExactNavLink>
             </li>
             <li className="nav-item">
-              <Link
+              <ExactNavLink
                 to="/about"
-                className="nav-link"
-                activeClassName="active"
               >
                 About
-              </Link>
+              </ExactNavLink>
             </li>
           </ul>
         </div>
